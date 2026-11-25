@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://example.org',
+  site: 'https://arun2k17.github.io',
+  base: '/meditation-center',
 });

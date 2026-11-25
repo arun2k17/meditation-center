@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/paths';
 const signupUrl = 'https://example.org/retreat-signup'; // Replace when the registration provider is chosen.
 const formats = [
   { title: 'Short retreat', length: 'About 3 days', description: 'A shorter residential retreat format is under consideration.' },
@@ -19,5 +20,5 @@ const formats = [
   </section>
 
   <section class="retreat-banner"><div class="section-wrap retreat-inner"><div><p class="eyebrow">Interested in attending?</p><h2>Registration details are coming.</h2><p>We plan to share a sign-up link once dates and registration arrangements are confirmed.</p></div><a class="button button-light" href={signupUrl}>Sample sign-up link <span aria-hidden="true">↗</span></a></div></section>
-  <section class="section-wrap signup-note" id="signup"><p class="placeholder-note">The sign-up URL above is a placeholder for layout review. Replace it with the center’s registration link before publishing.</p><a class="text-link" href="/faq">Read retreat FAQ →</a></section>
+  <section class="section-wrap signup-note" id="signup"><p class="placeholder-note">The sign-up URL above is a placeholder for layout review. Replace it with the center’s registration link before publishing.</p><a class="text-link" href={withBase('/faq')}>Read retreat FAQ →</a></section>
 </BaseLayout>

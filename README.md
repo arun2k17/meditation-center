@@ -16,4 +16,8 @@ npm run build
 npm run preview
 ```
 
-Update the sample copy, schedule, teachers, contact details, and donation link before publishing. The website is static and does not include accounts or user data collection.
+## GitHub Pages
+
+The `main` branch workflow in `.github/workflows/deploy.yml` builds the site and publishes Astro's `dist/` output. It uses the repository URL `https://arun2k17.github.io/meditation-center/`; configure the repository's Pages source as **GitHub Actions** under Settings → Pages.
+
+Update the sample retreat details, teachers, FAQ, contact details, and donation link before publishing. The website is static and does not include accounts or user data collection.

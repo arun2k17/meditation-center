@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/paths';
 const questions = [
   { q: 'Who can attend a retreat?', a: 'The center intends to welcome people interested in learning about a Theravada Buddhist retreat. Any age limits, experience guidance, and accessibility details will be confirmed with each retreat announcement.' },
   { q: 'Do I need to register?', a: 'Registration arrangements have not been set yet. A sign-up link and any space limits will be listed on the retreat page once confirmed.' },
@@ -13,5 +14,5 @@ const questions = [
 <BaseLayout title="Retreat FAQ | Northwest Meditation Center" description="Frequently asked questions about the retreat program in planning.">
   <section class="page-hero"><p class="eyebrow">Planning your retreat</p><h1>Retreat<br /><em>questions.</em></h1><p>Our retreat program is still taking shape. These answers show the kinds of information we plan to share; details are not final.</p></section>
   <section class="section-wrap faq-section"><div class="faq-intro"><p class="eyebrow">Frequently asked questions</p><h2>What to know</h2><p>We’ll update these answers as decisions are made.</p></div><div class="faq-list">{questions.map((item) => <details class="faq-item"><summary>{item.q}</summary><p>{item.a}</p></details>)}</div><p class="placeholder-note">FAQ copy is draft sample content. Confirm center policies before publishing.</p></section>
-  <section class="faq-contact"><div><p class="eyebrow">Still have a question?</p><h2>Contact the center.</h2></div><a class="button button-dark" href="/contact">Contact information <span aria-hidden="true">→</span></a></section>
+  <section class="faq-contact"><div><p class="eyebrow">Still have a question?</p><h2>Contact the center.</h2></div><a class="button button-dark" href={withBase('/contact')}>Contact information <span aria-hidden="true">→</span></a></section>
 </BaseLayout>
