@@ -1,24 +1,37 @@
 ---
-const { title = 'Northwest Meditation Center', description = 'Theravada Buddhist retreats for quiet, reflection, and community.' } = Astro.props;
+const { title = 'Northwest Meditation Center', description = 'A registered nonprofit in Bellingham, Washington, supporting wisdom and the study and practice of Theravada meditation.' } = Astro.props;
 import { withBase } from '../utils/paths';
 import '../styles/global.css';
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f7f4eb" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={withBase('/images/center-entrance.jpg')} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href={withBase('/lotus.svg')} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'NGO',
+      name: 'Northwest Meditation Center',
+      description: 'A registered nonprofit organization supporting the spiritual practice of wisdom and the study and practice of Theravada meditation.',
+      email: 'nwmeditationcenter@gmail.com',
+      telephone: '+1-425-773-1789',
+      address: { '@type': 'PostalAddress', addressLocality: 'Bellingham', addressRegion: 'WA', addressCountry: 'US' },
+      sameAs: ['https://www.facebook.com/NWmeditationcenter'],
+    })} />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href={withBase('/')} aria-label="Northwest Meditation Center home">
-          <img src={withBase('/lotus.svg')} alt="" width="44" height="44" />
+          <img src={withBase('/images/northwest-meditation-center-logo.jpg')} alt="" width="62" height="62" />
           <span><strong>Northwest</strong><small>Meditation Center</small></span>
         </a>
         <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>

@@ -28,6 +28,24 @@
 :root{--lotus-gold:#a77d48;--plum:#76524c;--paper:#f8f4e9}
 body{background-image:radial-gradient(ellipse at 100% 16%,rgba(183,144,87,.09),transparent 32%),radial-gradient(ellipse at 0 72%,rgba(94,120,93,.045),transparent 34%)}
 .hero-art{background-image:radial-gradient(ellipse at 80% 10%,rgba(248,232,190,.46),transparent 36%),linear-gradient(180deg,#ded9c9 0%,#f0e2c8 54%,#b0aa8d 100%)}
+.brand img{width:62px;height:62px;object-fit:contain;mix-blend-mode:multiply;flex:none}
+.hero-art{background:#c6c1ad}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 53%;filter:saturate(.83)}
+.hero-photo-tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,49,38,.02) 45%,rgba(30,43,34,.52) 100%);z-index:1}
+.art-caption{z-index:3;text-shadow:0 1px 5px rgba(0,0,0,.55)}
+.place-showcase{display:grid;grid-template-columns:.9fr 1fr 1fr;grid-template-rows:190px 170px;grid-template-areas:"copy main main" "copy shrine woods";gap:14px;padding-top:12px;padding-bottom:76px}
+.showcase-copy{grid-area:copy;align-self:center;padding-right:20px}
+.showcase-copy h2{font-size:30px;margin-bottom:12px}
+.showcase-copy>p:not(.eyebrow){color:#6b756a;font-size:13px;line-height:1.8}
+.showcase-image{margin:0;overflow:hidden;position:relative;background:#e6e0d2}
+.showcase-image::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(31,45,35,.2))}
+.showcase-image img,.contact-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.showcase-image:hover img{transform:scale(1.025)}
+.showcase-main{grid-area:main}.showcase-main img{object-position:center 60%}.showcase-shrine{grid-area:shrine}.showcase-woods{grid-area:woods}
+.contact-photo{margin:18px 0 0;height:205px;overflow:hidden;background:#e6e0d2}
+.retreat-banner{position:relative;isolation:isolate;background-color:#344b3d;overflow:hidden}
+.retreat-banner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(33,53,42,.94),rgba(37,56,43,.79)),var(--retreat-image) center 48%/cover no-repeat}
+@media(max-width:800px){.place-showcase{grid-template-columns:1fr 1fr;grid-template-rows:auto 230px 160px;grid-template-areas:"copy copy" "main main" "shrine woods";padding-top:4px;padding-bottom:48px;gap:11px}.showcase-copy{padding:0 0 10px}.showcase-copy h2{font-size:27px}.brand img{width:52px;height:52px}.contact-photo{height:190px}}
 .hero-floral{position:absolute;z-index:1;right:4%;bottom:-35px;width:clamp(145px,21vw,235px);height:auto;opacity:.27;mix-blend-mode:multiply;transform:rotate(-7deg);pointer-events:none}
 .temple{z-index:2}
 .art-caption{z-index:3}

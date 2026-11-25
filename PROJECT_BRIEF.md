@@ -15,6 +15,8 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 - Simple, accessible design that works well in desktop and mobile web browsers.
 - Traditional visual style should be visible in the design: warm paper backgrounds, layered/blended imagery, and restrained floral or lotus details that gently suggest Thai culture and Buddhism while keeping text readable.
 - Use decorative flower linework and soft floral backgrounds as accents, not dense wallpaper. Keep the overall layout simple and accessible.
+- Use the center’s supplied logo and photographs. Blend photographs into the hero, story sections, and retreat banners rather than adding a separate gallery page for the initial design.
+- Center identity details supplied by the user: Bellingham, Washington; nwmeditationcenter@gmail.com; (425) 773-1789; Facebook page `https://www.facebook.com/NWmeditationcenter`. Use the supplied Practical Approach tagline in center copy.
 - Use [atamma.org](https://atamma.org/) as a reference for the type of center website, without copying it. Aim for a better-organized, simpler experience.
 
 ## Content and features
