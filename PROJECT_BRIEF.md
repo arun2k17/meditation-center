@@ -13,7 +13,8 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 - Static website; no user login and no collection of user data.
 - Treat the website as copyrighted and proprietary; do not include an open-source license in the repository.
 - Simple, accessible design that works well in desktop and mobile web browsers.
-- Traditional visual style, with clear and easy-to-use navigation.
+- Traditional visual style should be visible in the design: warm paper backgrounds, layered/blended imagery, and restrained floral or lotus details that gently suggest Thai culture and Buddhism while keeping text readable.
+- Use decorative flower linework and soft floral backgrounds as accents, not dense wallpaper. Keep the overall layout simple and accessible.
 - Use [atamma.org](https://atamma.org/) as a reference for the type of center website, without copying it. Aim for a better-organized, simpler experience.
 
 ## Content and features
@@ -23,6 +24,7 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 - Focus the site on retreats. Do not list chanting, meditation sessions, or other regular activities as current offerings.
 - The center is considering holding two retreats per month: one short retreat of about 3 days and one longer retreat of about 5 days.
 - Frequency, duration, dates, program, and logistics are all undecided. Present these as tentative planning options, and keep the design flexible so duration does not affect the layout.
+- For design review, show a realistic two-month sample schedule: Dec 4–6 and Dec 18–22, 2026; Jan 8–10 and Jan 22–26, 2027. Label every date clearly as sample/tentative until approved.
 - Provide a clear sign-up link when the registration destination is chosen.
 - Include a retreat FAQ for prospective participants.
 - Atamma.org may be used as a source of topic ideas for practical retreat information (for example, registration, meals, lodging, costs/donations, and what to bring). Write original copy and verify all center-specific policies before publishing.
