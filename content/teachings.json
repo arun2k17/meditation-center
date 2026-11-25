@@ -1,12 +1,7 @@
 {
   "description": "Talks and articles from Northwest Meditation Center.",
-  "headingFirst": "Explore the",
-  "headingSecond": "teachings.",
-  "introduction": "Explore talks and reflections on the Buddha’s teachings.",
-  "emptyMessage": "More talks and articles will be added soon.",
-  "items": [
-    { "kind": "Talk · Video", "title": "An Introduction to the Buddha’s Path", "description": "A talk on the foundations of the Buddhist path and how the teachings can guide daily life.", "className": "teaching-one", "symbol": "▶" },
-    { "kind": "Article", "title": "The Practice of Generosity", "description": "Reflections on generosity, kindness, and the cultivation of an open heart.", "className": "teaching-two", "symbol": "❋" },
-    { "kind": "Talk · Video", "title": "Understanding the Four Noble Truths", "description": "An introduction to the central framework of the Buddha’s teaching.", "className": "teaching-three", "symbol": "▶" }
-  ]
+  "heading": "Explore the\nteachings.",
+  "introduction": "Talks and articles will be gathered here when they are ready to share.",
+  "emptyMessage": "No talks or articles have been published here yet.",
+  "items": []
 }

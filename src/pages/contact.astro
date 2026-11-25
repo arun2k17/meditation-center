@@ -2,9 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FloralAccent from '../components/FloralAccent.astro';
 import content from '../../content/contact.json';
-import { withBase } from '../utils/paths';
 ---
 <BaseLayout title="Contact | Northwest Meditation Center" description={content.description}>
-  <section class="page-hero"><FloralAccent /><p class="eyebrow">Get in touch</p><h1>{content.headingFirst}<br /><em>{content.headingSecond}</em></h1><p>{content.introduction}</p></section>
-  <section class="visit-grid section-wrap"><div class="visit-card"><p class="eyebrow">Our location</p><h2>Find the center</h2><p>{content.locationNote}</p><div class="map-placeholder" aria-label="Map illustration for the Pacific Northwest"><span>⌖</span><small>Pacific Northwest</small></div></div><div class="visit-card" id="contact"><p class="eyebrow">Say hello</p><h2>Contact us</h2><p>{content.contactNote}</p><div class="first-visit"><h3>First retreat?</h3><p>Find retreat details and practical information on the retreat and FAQ pages.</p><p><a class="text-link" href={withBase('/retreats')}>View retreats →</a> &nbsp; <a class="text-link" href={withBase('/faq')}>Read the FAQ →</a></p></div></div></section>
+  <section class="page-hero"><FloralAccent /><p class="eyebrow">Get in touch</p><h1>{content.heading}</h1><p>{content.introduction}</p></section>
+  <section class="visit-grid section-wrap"><div class="visit-card"><p class="eyebrow">Location</p><h2>Visit the center</h2><p>{content.locationNote}</p></div><div class="visit-card" id="contact"><p class="eyebrow">Contact</p><h2>Reach us</h2><p>{content.contactNote}</p></div></section>
 </BaseLayout>

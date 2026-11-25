@@ -1,13 +1,7 @@
 {
   "description": "About Northwest Meditation Center.",
-  "headingFirst": "A path walked",
-  "headingSecond": "together.",
-  "introduction": "We are a community inspired by the Theravada tradition and the Buddha’s teachings.",
-  "body": "Northwest Meditation Center welcomes people from all backgrounds who are interested in learning about the Theravada Buddhist tradition. Our retreats offer time away in a supportive community.",
-  "peopleNote": "Our teachers and board members help guide the center and its retreat community.",
-  "people": [
-    { "role": "Resident teacher", "name": "Ven. Sumanā", "bio": "Shares Dhamma reflections and guides the center’s retreat program.", "symbol": "☼" },
-    { "role": "Visiting teacher", "name": "Ven. Ānanda", "bio": "Offers teachings rooted in the Theravada tradition.", "symbol": "❋" },
-    { "role": "Board chair", "name": "Maya Chen", "bio": "Helps care for the center and its community programs.", "symbol": "◌" }
-  ]
+  "heading": "About the\ncenter.",
+  "introduction": "Northwest Meditation Center is a Theravada Buddhist center.",
+  "body": "The center’s background and retreat information will be added here as details are confirmed.",
+  "peopleNote": "Information about teachers and board members will be published when confirmed."
 }

@@ -5,8 +5,8 @@ import content from '../../content/faq.json';
 import { withBase } from '../utils/paths';
 ---
 <BaseLayout title="Retreat FAQ | Northwest Meditation Center" description={content.description}>
-  <section class="page-hero"><FloralAccent /><p class="eyebrow">Planning your retreat</p><h1>{content.headingFirst}<br /><em>{content.headingSecond}</em></h1><p>{content.introduction}</p></section>
-  <section class="section-wrap faq-section"><div class="faq-intro"><p class="eyebrow">Frequently asked questions</p><h2>What to know</h2><p>Helpful details for your stay.</p></div>
+  <section class="page-hero"><FloralAccent /><p class="eyebrow">Retreat information</p><h1>{content.heading}</h1><p>{content.introduction}</p></section>
+  <section class="section-wrap faq-section"><div class="faq-intro"><p class="eyebrow">Frequently asked questions</p><h2>What to know</h2></div>
     {content.questions.length ? <div class="faq-list">{content.questions.map((item) => <details class="faq-item"><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div> : <p class="prose">{content.emptyMessage}</p>}
   </section>
   <section class="faq-contact"><div><p class="eyebrow">Contact</p><h2>Questions about the center?</h2></div><a class="button button-dark" href={withBase('/contact')}>Contact <span aria-hidden="true">→</span></a></section>

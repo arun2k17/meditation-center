@@ -1,10 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FloralAccent from '../components/FloralAccent.astro';
-import { withBase } from '../utils/paths';
 import content from '../../content/support.json';
 ---
 <BaseLayout title="Support | Northwest Meditation Center" description={content.description}>
-  <section class="page-hero"><FloralAccent /><p class="eyebrow">Dana · generosity</p><h1>{content.headingFirst}<br /><em>{content.headingSecond}</em></h1><p>{content.introduction}</p></section>
-  <section class="donation-section support-page"><div class="donation-inner"><div><p class="eyebrow">Ways to give</p><h2>Offer support</h2><p>{content.message}</p></div>{content.donationUrl && <a class="button button-light" href={content.donationUrl.startsWith('/') ? withBase(content.donationUrl) : content.donationUrl}>Support the center <span aria-hidden="true">↗</span></a>}</div></section>
+  <section class="page-hero"><FloralAccent /><p class="eyebrow">Support the center</p><h1>{content.heading}</h1><p>{content.introduction}</p></section>
+  <section class="donation-section support-page"><div class="donation-inner"><div><p class="eyebrow">Giving</p><h2>Offer support</h2><p>{content.message}</p></div>{content.donationUrl && <a class="button button-light" href={content.donationUrl}>Donation information <span aria-hidden="true">↗</span></a>}</div></section>
 </BaseLayout>

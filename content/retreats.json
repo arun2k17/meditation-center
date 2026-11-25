@@ -1,18 +1,7 @@
 {
   "description": "Confirmed retreat information from Northwest Meditation Center.",
-  "headingFirst": "Time away for",
-  "headingSecond": "quiet reflection.",
-  "introduction": "Retreats offer time away for quiet reflection in a supportive Theravada Buddhist community.",
-  "emptyMessage": "More retreat dates will be announced soon.",
-  "registrationText": "Registration is open. Contact us to reserve your place.",
-  "months": [
-    { "name": "December 2026", "retreats": [
-      { "format": "Short retreat", "startDate": "2026-12-04", "startLabel": "Friday, December 4", "endDate": "2026-12-06", "endLabel": "Sunday, December 6", "length": "3 days", "title": "A Weekend of Quiet Reflection" },
-      { "format": "Extended retreat", "startDate": "2026-12-18", "startLabel": "Friday, December 18", "endDate": "2026-12-22", "endLabel": "Tuesday, December 22", "length": "5 days", "title": "A Longer Retreat in the Dhamma" }
-    ] },
-    { "name": "January 2027", "retreats": [
-      { "format": "Short retreat", "startDate": "2027-01-08", "startLabel": "Friday, January 8", "endDate": "2027-01-10", "endLabel": "Sunday, January 10", "length": "3 days", "title": "Beginning the Year with Reflection" },
-      { "format": "Extended retreat", "startDate": "2027-01-22", "startLabel": "Friday, January 22", "endDate": "2027-01-26", "endLabel": "Tuesday, January 26", "length": "5 days", "title": "A Quiet January Retreat" }
-    ] }
-  ]
+  "heading": "Time away for\nquiet reflection.",
+  "introduction": "Information about retreats will be published here when plans are confirmed.",
+  "emptyMessage": "No retreats have been announced. Confirmed dates and registration information will appear here when available.",
+  "retreats": []
 }
