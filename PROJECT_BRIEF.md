@@ -11,6 +11,7 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 ## Principles
 
 - Static website; no user login and no collection of user data.
+- Treat the website as copyrighted and proprietary; do not include an open-source license in the repository.
 - Simple, accessible design that works well in desktop and mobile web browsers.
 - Traditional visual style, with clear and easy-to-use navigation.
 - Use [atamma.org](https://atamma.org/) as a reference for the type of center website, without copying it. Aim for a better-organized, simpler experience.
@@ -57,7 +58,7 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 - Chosen direction: Astro, using native Astro components and CSS without React. The site is simple and does not need a client-side application framework.
 - Hosting direction: GitHub Pages, built and deployed from `main` with GitHub Actions. Keep generated `dist/` output out of source control; set Astro's base path for the repository URL.
 - Keep the design and page layouts stable after the initial design is approved; future updates are expected to be mostly content changes.
-- Footer decisions: omit footer navigation and the separate center branding/tagline. Keep a centered copyright notice naming the center.
+- Navigation and footer decisions: use uniform styling for all main-menu links, including Support; omit footer navigation and separate footer branding/tagline; keep a centered copyright notice naming the center.
 - Store content in files with a consistent format, separate from presentation where practical. Use Markdown for longer pages and teachings, and structured data for repeatable items such as teachers, board members, and events. Add schema validation for repeated content where useful.
 - Keep client-side JavaScript minimal and limited to features that need it.
 - Keep the calendar simple and manually maintained at first; link to an external calendar only if the center already relies on one.
