@@ -2,7 +2,11 @@
 
 ## Purpose
 
-Plan a simple, welcoming static website for a Theravada Buddhist center. The site should share the center's community, teachings, schedule, and practical information.
+Plan a simple, welcoming static website for a Theravada Buddhist center. The current planning focus is retreats and the practical information visitors need to understand and sign up for them.
+
+- Working name: Northwest Meditation Center.
+- Main menu: About, Retreats, Teachings (talks and articles), Contact, Support. Each item has its own page.
+- Use the main navigation only for now; add a secondary in-page menu only if a page grows long enough to benefit from section links.
 
 ## Principles
 
@@ -13,36 +17,34 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The sit
 
 ## Content and features
 
+### Current scope: retreats
+
+- Focus the site on retreats. Do not list chanting, meditation sessions, or other regular activities as current offerings.
+- The center is considering holding two retreats per month: one short retreat of about 3 days and one longer retreat of about 5 days.
+- Frequency, duration, dates, program, and logistics are all undecided. Present these as tentative planning options, and keep the design flexible so duration does not affect the layout.
+- Provide a clear sign-up link when the registration destination is chosen.
+- Include a retreat FAQ for prospective participants.
+- Atamma.org may be used as a source of topic ideas for practical retreat information (for example, registration, meals, lodging, costs/donations, and what to bring). Write original copy and verify all center-specific policies before publishing.
+
 ### About
 
 - Center introduction and background.
 - Board members.
 - Teachers.
 
-### Events and practice schedule
+### Teachings
 
-- Events calendar.
-- Meditation and retreat schedules.
-
-### Teachers and teachings
-
-- Teacher profiles.
-- Teachings, including YouTube videos and articles.
+- Talks and articles, with links to approved source material such as YouTube videos.
 
 ### Practical information
 
-- Donation links.
-- Contact information.
-- Center location and directions.
+- Contact page with center location and directions.
+- Separate Support page with donation links.
 
 ## Language support
 
 - Consider bilingual content in Thai and US English (English as used in the United States).
 - Confirm translation and language-switching needs during planning.
-
-## Optional idea
-
-- Consider offering background chanting audio for visitors, with an obvious option to turn it off. This is not a core requirement and should be designed so audio never surprises or disrupts visitors.
 
 ## Logistics and maintenance
 
@@ -54,6 +56,7 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The sit
 
 - Chosen direction: Astro, using native Astro components and CSS without React. The site is simple and does not need a client-side application framework.
 - Keep the design and page layouts stable after the initial design is approved; future updates are expected to be mostly content changes.
+- Footer decisions: omit footer navigation and the separate center branding/tagline. Keep a centered copyright notice naming the center.
 - Store content in files with a consistent format, separate from presentation where practical. Use Markdown for longer pages and teachings, and structured data for repeatable items such as teachers, board members, and events. Add schema validation for repeated content where useful.
 - Keep client-side JavaScript minimal and limited to features that need it.
 - Keep the calendar simple and manually maintained at first; link to an external calendar only if the center already relies on one.

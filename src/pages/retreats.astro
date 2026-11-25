@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const signupUrl = 'https://example.org/retreat-signup'; // Replace when the registration provider is chosen.
+const formats = [
+  { title: 'Short retreat', length: 'About 3 days', description: 'A shorter residential retreat format is under consideration.' },
+  { title: 'Long retreat', length: 'About 5 days', description: 'A longer retreat format is also being considered.' },
+];
+---
+<BaseLayout title="Retreats | Northwest Meditation Center" description="Retreat program information and planning updates from Northwest Meditation Center.">
+  <section class="page-hero"><p class="eyebrow">Retreats at Northwest</p><h1>Time away for<br /><em>quiet reflection.</em></h1><p>We are planning a retreat program rooted in the Theravada Buddhist tradition. Dates, formats, and program details are still being decided.</p></section>
+
+  <section class="section-wrap retreat-page-section">
+    <div class="section-title-row"><div><p class="eyebrow">Possible monthly program</p><h2>Retreat formats under consideration</h2></div><span class="soft-label">Planning stage</span></div>
+    <p class="retreat-lead">The current idea is to offer two retreats each month. The frequency and lengths below are proposals only; the final program may change.</p>
+    <div class="three-cards retreat-options">
+      {formats.map((format) => <article class="feature-card retreat-format"><span class="card-icon">◌</span><span class="card-kicker">Possible format</span><h3>{format.title}</h3><p class="format-length">{format.length}</p><p>{format.description}</p></article>)}
+    </div>
+    <p class="placeholder-note">Proposed frequency and duration are not confirmed. Dates, capacity, accommodations, meals, fees, and program details will be posted when decided.</p>
+  </section>
+
+  <section class="retreat-banner"><div class="section-wrap retreat-inner"><div><p class="eyebrow">Interested in attending?</p><h2>Registration details are coming.</h2><p>We plan to share a sign-up link once dates and registration arrangements are confirmed.</p></div><a class="button button-light" href={signupUrl}>Sample sign-up link <span aria-hidden="true">↗</span></a></div></section>
+  <section class="section-wrap signup-note" id="signup"><p class="placeholder-note">The sign-up URL above is a placeholder for layout review. Replace it with the center’s registration link before publishing.</p><a class="text-link" href="/faq">Read retreat FAQ →</a></section>
+</BaseLayout>

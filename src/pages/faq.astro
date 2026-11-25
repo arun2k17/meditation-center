@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const questions = [
+  { q: 'Who can attend a retreat?', a: 'The center intends to welcome people interested in learning about a Theravada Buddhist retreat. Any age limits, experience guidance, and accessibility details will be confirmed with each retreat announcement.' },
+  { q: 'Do I need to register?', a: 'Registration arrangements have not been set yet. A sign-up link and any space limits will be listed on the retreat page once confirmed.' },
+  { q: 'What happens during a retreat?', a: 'The retreat program is still being planned. The center will publish a clear outline of activities and daily timing before registration opens.' },
+  { q: 'Are meals or overnight accommodation provided?', a: 'These details are not confirmed. Each retreat announcement will explain what is available and what participants should arrange for themselves.' },
+  { q: 'What should I bring or wear?', a: 'A participant guide will be shared with practical details before each retreat. Please contact the center if you have a question that affects your planning.' },
+  { q: 'Is there a fee?', a: 'Fees and any donation guidance are still under consideration. The final details will be shown before registration.' },
+  { q: 'How do I ask a question?', a: 'Use the contact information on the visit page. Please don’t send personal or medical details through this sample website.' },
+];
+---
+<BaseLayout title="Retreat FAQ | Northwest Meditation Center" description="Frequently asked questions about the retreat program in planning.">
+  <section class="page-hero"><p class="eyebrow">Planning your retreat</p><h1>Retreat<br /><em>questions.</em></h1><p>Our retreat program is still taking shape. These answers show the kinds of information we plan to share; details are not final.</p></section>
+  <section class="section-wrap faq-section"><div class="faq-intro"><p class="eyebrow">Frequently asked questions</p><h2>What to know</h2><p>We’ll update these answers as decisions are made.</p></div><div class="faq-list">{questions.map((item) => <details class="faq-item"><summary>{item.q}</summary><p>{item.a}</p></details>)}</div><p class="placeholder-note">FAQ copy is draft sample content. Confirm center policies before publishing.</p></section>
+  <section class="faq-contact"><div><p class="eyebrow">Still have a question?</p><h2>Contact the center.</h2></div><a class="button button-dark" href="/contact">Contact information <span aria-hidden="true">→</span></a></section>
+</BaseLayout>
