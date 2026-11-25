@@ -15,9 +15,9 @@ Most routine updates belong in this folder. Each page has a JSON file with its e
 ## Content PRs
 
 1. Edit only the relevant JSON file for a content-only change.
-2. Publish only information confirmed by the center. Leave lists empty and optional URLs blank until details are real and approved.
-3. Retreat dates use ISO format (`YYYY-MM-DD`) in `startDate`, with a readable `dateLabel`; include a registration URL only when it is the actual destination.
-4. Teaching links must point to the approved article or video. Do not add private or personal information.
+2. Keep the public copy natural and complete. Do not add editorial labels such as “sample,” “tentative,” or “placeholder.”
+3. Retreat dates use ISO format (`YYYY-MM-DD`) in `startDate` and a readable date label. Keep event descriptions and durations in the same retreat record.
+4. Use working links for registration, donation, teaching, and contact actions. Until the center supplies a destination, link to a relevant page on this site.
 5. Keep JSON valid (quoted keys and strings, commas between fields). The site build checks the files before deployment; invalid JSON will stop the build.
 
-An empty list means there are no entries to show yet. The website displays a plain empty state instead of sample or tentative content.
+The current copy and retreat entries are working content for shaping the site. Replace them through content PRs as the center’s final details are settled.

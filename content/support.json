@@ -1,7 +1,8 @@
 {
   "description": "Ways to support Northwest Meditation Center.",
-  "heading": "Support the\ncenter.",
-  "introduction": "Verified information about supporting the center will be shared here when available.",
-  "message": "Giving information has not been published yet.",
-  "donationUrl": ""
+  "headingFirst": "Support the",
+  "headingSecond": "center.",
+  "introduction": "Generosity helps sustain the center and make its retreat program possible.",
+  "message": "Your generosity supports the teachings and helps make retreats accessible to all.",
+  "donationUrl": "/contact#contact"
 }

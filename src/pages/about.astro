@@ -4,7 +4,7 @@ import FloralAccent from '../components/FloralAccent.astro';
 import content from '../../content/about.json';
 ---
 <BaseLayout title="About | Northwest Meditation Center" description={content.description}>
-  <section class="page-hero"><FloralAccent /><p class="eyebrow">About the center</p><h1>{content.heading}</h1><p>{content.introduction}</p></section>
+  <section class="page-hero"><FloralAccent /><p class="eyebrow">Our community</p><h1>{content.headingFirst}<br /><em>{content.headingSecond}</em></h1><p>{content.introduction}</p></section>
   <section class="content-grid section-wrap"><div><p class="eyebrow">Our intention</p><h2>A welcoming place for retreats</h2></div><div class="prose"><p>{content.body}</p></div></section>
-  <section class="people-section"><div class="section-wrap"><p class="eyebrow">Guidance &amp; care</p><h2>Teachers and board</h2><p class="prose">{content.peopleNote}</p></div></section>
+  <section class="people-section"><div class="section-wrap"><p class="eyebrow">Guidance &amp; care</p><h2>Our teachers and board</h2><div class="people-grid">{content.people.map((person, index) => <article class="person-card"><div class={`portrait portrait-${['one','two','three'][index % 3]}`}>{person.symbol}</div><p class="eyebrow">{person.role}</p><h3>{person.name}</h3><p>{person.bio}</p></article>)}</div></div></section>
 </BaseLayout>

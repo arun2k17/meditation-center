@@ -1,9 +1,14 @@
 {
   "description": "Northwest Meditation Center is a Theravada Buddhist center.",
-  "heading": "A place for\nquiet reflection.",
-  "introduction": "Northwest Meditation Center is a Theravada Buddhist center.",
+  "headingFirst": "Make space for",
+  "headingSecond": "quiet reflection.",
+  "introduction": "Step away from the pace of daily life and spend time in a supportive setting shaped by the Theravada Buddhist tradition.",
   "artCaption": "A quiet place to return",
-  "welcomeHeading": "A Theravada Buddhist center.",
-  "welcomeText": "We are shaping the center’s website around retreats, teachings, and practical information.",
-  "retreatNote": "Confirmed retreat information will be shared here when available."
+  "welcomeHeading": "Take time to step away.",
+  "welcomeText": "We welcome people interested in spending a few days in a quiet, supportive Buddhist community.",
+  "shortRetreatTitle": "Short retreat",
+  "shortRetreatText": "A three-day retreat for time away, practice, and reflection.",
+  "longRetreatTitle": "Extended retreat",
+  "longRetreatText": "A five-day retreat with more time to settle into the retreat rhythm.",
+  "retreatNote": "Join us for quiet reflection and time in community."
 }

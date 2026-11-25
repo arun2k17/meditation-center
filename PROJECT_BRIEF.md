@@ -22,10 +22,10 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 ### Current scope: retreats
 
 - Focus the site on retreats. Do not list chanting, meditation sessions, or other regular activities as current offerings.
-- Frequency, duration, program, and logistics are undecided. Keep the design flexible so duration does not affect the layout.
-- Do not publish invented names, dates, schedules, registration or donation links, addresses, contact details, biographies, teachings, or policies. Public pages use clear empty states until the center confirms information.
-- Add a registration link only when the real destination is confirmed.
-- Include a retreat FAQ page; publish answers only after center policies are confirmed.
+- Keep retreat length and schedule flexible so duration does not affect the layout.
+- During design shaping, use complete, realistic-looking example content in the page layouts. Do not show user-facing labels such as “sample,” “tentative,” or “placeholder.” Replace examples with the center’s approved details as they become available.
+- Keep example signup, contact, and donation actions within the site or otherwise clearly non-operational until real destinations are supplied; do not send visitors to unrelated third-party accounts.
+- Include a retreat FAQ page with useful example answers that can be updated through content PRs.
 - Atamma.org may be used as a source of topic ideas for practical retreat information (for example, registration, meals, lodging, costs/donations, and what to bring). Write original copy and verify all center-specific policies before publishing.
 
 ### About
@@ -52,7 +52,7 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 
 - The website is not expected to receive frequent updates.
 - Trusted developers will make updates; there is no requirement for a public editing interface or CMS.
-- Keep content separate from presentation so trusted developers can submit content-only PRs with low risk of changing the site. Page copy and repeatable records live in `content/*.json`; layouts, navigation, and styles live under `src/`. Empty lists and blank optional links render as empty states. Avoid adding a CMS or elaborate content pipeline unless maintenance needs change.
+- Keep content separate from presentation so trusted developers can submit content-only PRs with low risk of changing the site. Page copy and repeatable records live in `content/*.json`; layouts, navigation, and styles live under `src/`. Keep the presentation complete while content is being shaped. Avoid adding a CMS or elaborate content pipeline unless maintenance needs change.
 
 ## Implementation direction (initial recommendation)
 

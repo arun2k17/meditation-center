@@ -1,7 +1,9 @@
 {
   "description": "Contact and location information for Northwest Meditation Center.",
-  "heading": "Contact the\ncenter.",
-  "introduction": "Verified contact and location information will be published here when available.",
-  "locationNote": "Location and directions have not been published yet.",
-  "contactNote": "Contact details have not been published yet."
+  "headingFirst": "We’d be glad",
+  "headingSecond": "to hear from you.",
+  "introduction": "Questions about retreats, accessibility, or the center? We’d be happy to help.",
+  "locationNote": "Join us for a retreat in the Pacific Northwest. Directions and arrival information are shared with registered participants.",
+  "contactNote": "For retreat questions, read the retreat FAQ or visit the Retreats page to learn more.",
+  "email": ""
 }

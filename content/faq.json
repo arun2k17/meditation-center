@@ -1,7 +1,15 @@
 {
   "description": "Frequently asked questions about Northwest Meditation Center retreats.",
-  "heading": "Retreat\nquestions.",
-  "introduction": "Answers to common questions will be added as retreat information is confirmed.",
-  "emptyMessage": "There are no published retreat FAQs yet.",
-  "questions": []
+  "headingFirst": "Retreat",
+  "headingSecond": "questions.",
+  "introduction": "A few practical details to help you prepare for a retreat.",
+  "emptyMessage": "More answers will be added soon.",
+  "questions": [
+    { "question": "Who can attend a retreat?", "answer": "Retreats are open to anyone interested in learning about the Theravada Buddhist tradition. No prior meditation experience is needed." },
+    { "question": "Do I need to register?", "answer": "Yes. Please contact the center before attending so we can share arrival information and prepare for your visit." },
+    { "question": "What happens during a retreat?", "answer": "The schedule includes periods of meditation, Dhamma teachings, meals, and time for rest and reflection." },
+    { "question": "Are meals or overnight accommodation provided?", "answer": "Simple vegetarian meals and shared accommodation are available during retreats." },
+    { "question": "What should I bring or wear?", "answer": "Wear comfortable, modest clothing and bring personal toiletries, a water bottle, and any medication you need." },
+    { "question": "Is there a fee?", "answer": "Retreats are offered on a donation basis. Donations help cover food, lodging, and center expenses." }
+  ]
 }
