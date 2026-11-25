@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FloralAccent from '../components/FloralAccent.astro';
-import content from '../../content/support.json';
+import { withBase } from '../utils/paths';
+const donationUrl = 'https://example.org/donate'; // Replace with a verified giving destination.
 ---
-<BaseLayout title="Support | Northwest Meditation Center" description={content.description}>
-  <section class="page-hero"><FloralAccent /><p class="eyebrow">Support the center</p><h1>{content.heading}</h1><p>{content.introduction}</p></section>
-  <section class="donation-section support-page"><div class="donation-inner"><div><p class="eyebrow">Giving</p><h2>Offer support</h2><p>{content.message}</p></div>{content.donationUrl && <a class="button button-light" href={content.donationUrl}>Donation information <span aria-hidden="true">↗</span></a>}</div></section>
+<BaseLayout title="Support | Northwest Meditation Center">
+  <section class="page-hero"><FloralAccent /><p class="eyebrow">Dana · generosity</p><h1>Support the<br /><em>center.</em></h1><p>Generosity helps care for the center and its developing retreat program. Donation arrangements are being confirmed.</p></section>
+  <section class="donation-section support-page"><div class="donation-inner"><div><p class="eyebrow">Ways to give</p><h2>Offer support</h2><p>Once the retreat program is confirmed, this page will include the center’s approved donation options and any event-specific guidance.</p></div><a class="button button-light" href={donationUrl}>Sample donation link <span aria-hidden="true">↗</span></a></div><p class="placeholder-note">This destination is a placeholder. Replace it with the center’s verified donation link before publishing.</p></section>
+  <section class="section-wrap support-note"><p>Questions about supporting the center? <a class="text-link" href={withBase('/contact')}>Contact us →</a></p></section>
 </BaseLayout>

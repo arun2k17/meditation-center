@@ -1,14 +1,43 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import FloralAccent from '../components/FloralAccent.astro';
-import content from '../../content/retreats.json';
 import { withBase } from '../utils/paths';
+const signupUrl = 'https://example.org/retreat-signup'; // Replace when the registration provider is chosen.
+import FloralAccent from '../components/FloralAccent.astro';
+const months = [
+  {
+    name: 'December 2026',
+    retreats: [
+      { format: 'Short retreat', start: '2026-12-04', startLabel: 'Fri, Dec 4', end: '2026-12-06', endLabel: 'Sun, Dec 6', length: '3 days' },
+      { format: 'Long retreat', start: '2026-12-18', startLabel: 'Fri, Dec 18', end: '2026-12-22', endLabel: 'Tue, Dec 22', length: '5 days' },
+    ],
+  },
+  {
+    name: 'January 2027',
+    retreats: [
+      { format: 'Short retreat', start: '2027-01-08', startLabel: 'Fri, Jan 8', end: '2027-01-10', endLabel: 'Sun, Jan 10', length: '3 days' },
+      { format: 'Long retreat', start: '2027-01-22', startLabel: 'Fri, Jan 22', end: '2027-01-26', endLabel: 'Tue, Jan 26', length: '5 days' },
+    ],
+  },
+];
 ---
-<BaseLayout title="Retreats | Northwest Meditation Center" description={content.description}>
-  <section class="page-hero"><FloralAccent /><p class="eyebrow">Retreats at Northwest</p><h1>{content.heading}</h1><p>{content.introduction}</p></section>
+<BaseLayout title="Retreats | Northwest Meditation Center" description="Retreat program information and planning updates from Northwest Meditation Center.">
+  <section class="page-hero"><FloralAccent /><p class="eyebrow">Retreats at Northwest</p><h1>Time away for<br /><em>quiet reflection.</em></h1><p>We are planning a retreat program rooted in the Theravada Buddhist tradition. The dates below are sample proposals for review.</p></section>
+
   <section class="section-wrap retreat-page-section">
-    <div class="section-title-row"><div><p class="eyebrow">Retreat program</p><h2>Upcoming retreats</h2></div></div>
-    {content.retreats.length ? <div class="upcoming-retreats">{content.retreats.map((retreat) => <article class="upcoming-retreat-card"><p class="retreat-card-kicker"><span aria-hidden="true">✿</span> {retreat.format}</p><h3>{retreat.title}</h3><p class="retreat-date"><time datetime={retreat.startDate}>{retreat.dateLabel}</time></p>{retreat.description && <p>{retreat.description}</p>}{retreat.registrationUrl && <a class="text-link" href={retreat.registrationUrl}>Registration information ↗</a>}</article>)}</div> : <p class="prose">{content.emptyMessage}</p>}
-    <p><a class="text-link" href={withBase('/faq')}>Retreat FAQ →</a></p>
+    <div class="section-title-row"><div><p class="eyebrow">A sample two-month view</p><h2>Upcoming retreats</h2></div><span class="soft-label">Tentative dates</span></div>
+    <p class="retreat-lead">The draft plan shows one short and one long retreat each month. All dates and event details below are illustrative and have not been confirmed.</p>
+    {months.map((month) => <section class="retreat-month" aria-labelledby={`month-${month.name.replaceAll(' ', '-')}`}>
+      <h3 id={`month-${month.name.replaceAll(' ', '-')}`}>{month.name}</h3>
+      <div class="upcoming-retreats">{month.retreats.map((retreat) => <article class="upcoming-retreat-card">
+        <p class="retreat-card-kicker"><span aria-hidden="true">✿</span> Proposed · {retreat.format}</p>
+        <p class="retreat-date"><time datetime={retreat.start}>{retreat.startLabel}</time><span aria-hidden="true"> — </span><time datetime={retreat.end}>{retreat.endLabel}</time></p>
+        <p class="retreat-length">{retreat.length}</p>
+        <p class="retreat-card-note">Location, arrival details, and registration to be confirmed.</p>
+      </article>)}</div>
+    </section>)}
+    <p class="placeholder-note">Sample schedule only. Frequency, dates, capacity, accommodations, meals, fees, and program details remain undecided.</p>
   </section>
+
+  <section class="retreat-banner"><div class="section-wrap retreat-inner"><div><p class="eyebrow">Interested in attending?</p><h2>Registration details are coming.</h2><p>We plan to share a sign-up link once dates and registration arrangements are confirmed.</p></div><a class="button button-light" href={signupUrl}>Sample sign-up link <span aria-hidden="true">↗</span></a></div></section>
+  <section class="section-wrap signup-note" id="signup"><p class="placeholder-note">The sign-up URL above is a placeholder for layout review. Replace it with the center’s registration link before publishing.</p><a class="text-link" href={withBase('/faq')}>Read retreat FAQ →</a></section>
 </BaseLayout>
