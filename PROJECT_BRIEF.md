@@ -22,11 +22,10 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 ### Current scope: retreats
 
 - Focus the site on retreats. Do not list chanting, meditation sessions, or other regular activities as current offerings.
-- The center is considering holding two retreats per month: one short retreat of about 3 days and one longer retreat of about 5 days.
-- Frequency, duration, dates, program, and logistics are all undecided. Present these as tentative planning options, and keep the design flexible so duration does not affect the layout.
-- For design review, show a realistic two-month sample schedule: Dec 4–6 and Dec 18–22, 2026; Jan 8–10 and Jan 22–26, 2027. Label every date clearly as sample/tentative until approved.
-- Provide a clear sign-up link when the registration destination is chosen.
-- Include a retreat FAQ for prospective participants.
+- Frequency, duration, program, and logistics are undecided. Keep the design flexible so duration does not affect the layout.
+- Do not publish invented names, dates, schedules, registration or donation links, addresses, contact details, biographies, teachings, or policies. Public pages use clear empty states until the center confirms information.
+- Add a registration link only when the real destination is confirmed.
+- Include a retreat FAQ page; publish answers only after center policies are confirmed.
 - Atamma.org may be used as a source of topic ideas for practical retreat information (for example, registration, meals, lodging, costs/donations, and what to bring). Write original copy and verify all center-specific policies before publishing.
 
 ### About
@@ -53,7 +52,7 @@ Plan a simple, welcoming static website for a Theravada Buddhist center. The cur
 
 - The website is not expected to receive frequent updates.
 - Trusted developers will make updates; there is no requirement for a public editing interface or CMS.
-- Keep content separate from presentation where it makes updates clearer and safer. For a small site, use straightforward Markdown files for longer pages and teachings, and structured data (such as JSON or YAML) for repeatable items like teachers, board members, and events. Avoid adding a CMS or elaborate content pipeline unless maintenance needs change.
+- Keep content separate from presentation so trusted developers can submit content-only PRs with low risk of changing the site. Page copy and repeatable records live in `content/*.json`; layouts, navigation, and styles live under `src/`. Empty lists and blank optional links render as empty states. Avoid adding a CMS or elaborate content pipeline unless maintenance needs change.
 
 ## Implementation direction (initial recommendation)
 
